@@ -1,8 +1,11 @@
 const server = require('express')()
+const express=  require('express')
+
+server.set('view engine', 'ejs')
 
 server.get("/", (req, res)=>
 {
-    res.send("../oages/index.html")
+    res.render("../pages/index.ejs")
 }
 )
 
